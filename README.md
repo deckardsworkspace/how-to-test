@@ -9,7 +9,7 @@ The backend is written in Python using [FastAPI](https://fastapi.tiangolo.com/),
 
 ## Installation
 
-Ensure you have GNU Make, Python 3.13+, and Node.js + npm installed.
+Ensure you have GNU Make, Python 3.13+, [Poetry](https://python-poetry.org/), and Node.js + npm installed.
 
 To install the project dependencies, run
 
