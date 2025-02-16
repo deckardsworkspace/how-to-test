@@ -1,7 +1,7 @@
 how-to-test
 =========
 
-Very basic sample project to demonstrate how to test a web app via unit tests, integration tests, and end-to-end (E2E) tests.
+This is a very basic sample project to demonstrate how to test a web app via unit tests, integration tests, and end-to-end (E2E) tests.
 
 The web app is a simple application that allows the user to read and write to a "database" (implemented as a text file) on a remote server.
 
@@ -49,6 +49,8 @@ To run one class of tests only, use
 - `make integration-tests` to run integration tests
 - `make e2e-tests` to run E2E tests
 
+**Tip:** You can tell Playwright to pause at any time during the test by adding `page.pause()` to your test case. See `test_text.py` for example usage.
+
 ### Headless mode
 
 The above commands will run E2E tests in *headed* mode, which is where you can see the browser on your screen when your app is being tested. This is so you can follow along and see what Playwright is doing.
@@ -59,7 +61,7 @@ To run E2E tests in *headless* mode, run `make e2e-tests-headless` (or `make tes
 
 The unit tests only cover the backend. There are no unit tests yet for the frontend, but part of it is covered by the E2E tests.
 
-The project is bootstrap with support for [Vitest](https://vitest.dev/), so unit tests for the frontend can be added easily in the future.
+The project has been bootstrapped with support for [Vitest](https://vitest.dev/), so unit tests for the frontend can be added easily in the future.
 
 ## License
 
